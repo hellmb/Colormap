@@ -5,3 +5,7 @@ Figures/
 scatter.py
 .gitignore.swp
 .idea/
+ccmap/scatter.py
+tests/
+setup.py
+LICENSE
