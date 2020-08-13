@@ -10,15 +10,18 @@ def DefineColormap(name):
         Name of colormap
     """
 
+    # set all letters to lower case
+    name = name.lower()
+
     if name == 'afternoon':
         cmap = LinearSegmentedColormap.from_list("", ["#660000", "#8C0004", "#C8000A", "#E8A735", "#E2C499"])
     elif name == 'timeless':
         cmap = LinearSegmentedColormap.from_list("", ["#16253D", "#002C54", "#CD7213", "#EFB509"])
     elif name == 'subnautic':
         cmap = LinearSegmentedColormap.from_list("", ["#263238", "#004D40", "#0097A7", "#F57F17", "#F9A825"])
+    # elif name == 'arctic':
+    #     cmap = LinearSegmentedColormap.from_list("", ["#006C84", "#6EB5C0", "#E2E8E4", "#FFCCBB"])
     elif name == 'arctic':
-        cmap = LinearSegmentedColormap.from_list("", ["#006C84", "#6EB5C0", "#E2E8E4", "#FFCCBB"])
-    elif name == 'arctic2':
         cmap = LinearSegmentedColormap.from_list("", ["#006C84", "#FAFAFA", "#FFCCBB"])
     elif name == 'sunkissed':
         cmap = LinearSegmentedColormap.from_list("", ["#D24136", "#EB8A3E", "#EBB582", "#785A46"])

@@ -1,7 +1,7 @@
 __pycache__/
 *.DS_Store
 
-Figures/
+ccmap/figures/
 scatter.py
 .gitignore.swp
 .idea/
